@@ -1,0 +1,63 @@
+header {
+  height: 60px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--color-white);
+
+  .navbar {
+    padding: 0;
+    .navbar-brand {
+      padding: 0;
+      .logo_lotus {
+        width: 239px;
+        height: 34px;
+        object-fit: contain;
+        font-size: 0;
+
+      }
+
+      span {
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: var(--color-main);
+        font-size: 9px;
+        text-transform: uppercase;
+      }
+    }
+    .navbar-nav{
+      .nav-item {
+        margin: 0 20px;
+        .nav-link {
+          color: #0a262e;
+          padding-left: 0;
+          padding-right: 0;
+        }
+        &.active,
+        &:hover{
+          .nav-link {
+            color: var(--color-main);
+          }
+          border-bottom: 3px solid var(--color-organ);
+        }
+      }
+    }
+
+    .btn-login {
+      background-color: var(--color-main);
+      border-radius: 20px;
+      border: solid 1px #ffffff;
+      width: 168px;
+      height: 40px;
+      color: var(--color-white) !important;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 38px;
+      text-align: center;
+      text-decoration: none;
+      font-family: 'Open Sans', sans-serif;
+    }
+  }
+}

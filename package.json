@@ -2,7 +2,8 @@
   "name": "VNATemplate",
   "version": "1.0.0",
   "scripts": {
-    "scss": "node-sass --watch scss -o css"
+    "dev": "node-sass scss -o css",
+    "watch": "node-sass --watch scss -o css"
   },
   "dependencies": {
     "node-sass": "^5.0.0"
