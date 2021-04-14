@@ -1,3 +1,52 @@
-body{
+body {
   font-family: 'HelveticaNeue', sans-serif;
+
+  main {
+    margin-top: 190px;
+
+    .features-swiper-container {
+      position: relative;
+      .feature-product-swiper {
+        margin: 18px 66px;
+        padding: 12px;
+
+        .swiper-wrapper {
+          margin: -10px;
+          padding: 10px;
+          .block-item{
+            box-shadow: 0 3px 10px 0 rgba(0, 84, 144, 0.16);
+          }
+        }
+      }
+      .swiper-button{
+        width: 48px;
+        height: 48px;
+        display: block;
+        padding: 16px 12px;
+        box-shadow: 0 3px 10px 0 rgba(160, 111, 17, 0.16);
+        background: #ffffff url('/images/arrow-left.png') center center no-repeat;
+        background-size: 24px;
+        position: absolute;
+        z-index: 9999;
+        border-radius: 50%;
+        top: 42%;
+        &:focus{
+          border: none;
+          outline: 0;
+        }
+        &.swiper-button-disabled{
+          opacity: .7;
+        }
+      }
+      .button-swiper-home-next{
+        -ms-transform: rotate(-180deg); /* IE 9 */
+        transform: rotate(-180deg);
+        right: 0;
+      }
+      .button-swiper-home-prev{
+          left: 0;
+
+      }
+    }
+  }
 }
