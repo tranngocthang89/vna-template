@@ -55,7 +55,6 @@
 }
 .product-block {
   margin-top: 34px;
-  border: 1px solid #f00;
   .nav-tabs {
     border: none;
     margin-bottom: 32px;
@@ -75,4 +74,20 @@
     }
   }
 
+}
+.btn{
+  padding: .75rem;
+  &:focus{
+    box-shadow: none;
+  }
+}
+.btn-organ{
+  color: var(--color-white);
+  background-color: var(--color-organ);
+  font-family: OpenSans, serif;
+  font-size: 16px;
+  font-weight: 600;
+  &:hover{
+    color: var(--color-main)
+  }
 }
