@@ -1,88 +1,102 @@
+
 header {
-  height: 60px;
   display: flex;
   align-content: center;
   align-items: center;
   width: 100%;
   background-color: var(--color-white);
-  &.header-home{
+
+  .header-nav {
     height: auto;
     padding-top: 7px;
     background-color: transparent;
+    z-index: 9999;
+  }
 
-    .header-content{
-      margin-top: 45px;
-      .header-title{
-        font-size: 48px;
-        font-weight: 600;
-        line-height: 1.25;
-        color: #0a262e;
-        display: block;
-        margin-top: 100px;
-        text-transform: uppercase;
-        span{
-          color: var(--color-main)
+  .header-content {
+    margin-top: 5px;
+
+    .header-title {
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 1.25;
+      color: #0a262e;
+      display: block;
+      margin-top: 100px;
+      text-transform: uppercase;
+
+      span {
+        color: var(--color-main)
+      }
+
+
+    }
+
+    .list-services {
+      margin-top: 40px;
+      margin-left: 5px;
+
+      .service-item {
+        flex-shrink: 0;
+        border-radius: 16px;
+        box-shadow: 0 10px 20px 0 rgba(160, 111, 17, 0.16);
+        width: 270px;
+        height: 170px;
+        margin-right: 28px;
+        border: solid 2px #fff;
+        box-sizing: border-box;
+        padding: 20px;
+        cursor: pointer;
+        margin-bottom: 35px;
+        position: relative;
+
+        &:hover,
+        &.active {
+          border: 2px solid #dba410;
+
+          span {
+            color: var(--color-main)
+          }
         }
 
+        &::before {
+          content: '';
+          position: absolute;
+          width: 40px;
+          height: 72px;
+          border-radius: 20px;
+          border: solid 1px #aac9d1;
+          background-color: #c3e0e8;
+          z-index: 999;
+        }
 
-      }
-      .list-services{
-        margin-top: 40px;
-        margin-left: 5px;
+        span {
+          display: block;
+          margin-top: 10px;
+          font-size: 16px;
+          font-weight: 600;
+          color: #0a262e;
+        }
 
-        .service-item{
-          flex-shrink: 0;
-          border-radius: 16px;
-          box-shadow: 0 10px 20px 0 rgba(160, 111, 17, 0.16);
-          width: 270px;
-          height: 170px;
-          margin-right: 28px;
-          border: solid 2px #fff;
-          box-sizing: border-box;
-          padding: 20px;
-          cursor: pointer;
-          margin-bottom: 35px;
+        img {
+          display: block;
+          height: 72px;
+          width: auto;
+          z-index: 9999;
           position: relative;
-          &:hover,
-          &.active{
-            border: 2px solid #dba410;
-            span{
-              color: var(--color-main)
-            }
-          }
-          &::before{
-            content: '';
-            position: absolute;
-            width: 40px;
-            height: 72px;
-            border-radius: 20px;
-            border: solid 1px #aac9d1;
-            background-color: #c3e0e8;
-            z-index: 999;
-          }
-          span{
-            display: block;
-            margin-top: 10px;
-            font-size: 16px;
-            font-weight: 600;
-            color: #0a262e;
-          }
-          img{
-            display: block;
-            height: 72px;
-            width: auto;
-            z-index: 9999;
-            position: relative;
-            margin-left: 10px;
-          }
+          margin-left: 10px;
         }
       }
     }
+
   }
+
   .navbar {
     padding: 0;
+
     .navbar-brand {
       padding: 0;
+
       .logo_lotus {
         width: 239px;
         height: 34px;
@@ -100,19 +114,23 @@ header {
         text-transform: uppercase;
       }
     }
-    .navbar-nav{
+
+    .navbar-nav {
       .nav-item {
         margin: 0 20px;
+
         .nav-link {
           color: #0a262e;
           padding-left: 0;
           padding-right: 0;
         }
+
         &.active,
-        &:hover{
+        &:hover {
           .nav-link {
             color: var(--color-main);
           }
+
           border-bottom: 3px solid var(--color-organ);
         }
       }
@@ -131,6 +149,15 @@ header {
       text-align: center;
       text-decoration: none;
       font-family: 'Open Sans', sans-serif;
+    }
+  }
+}
+.page-home{
+  header{
+    background: transparent url("/images/header-bg.png") top right no-repeat;
+    background-size: contain;
+    .header-content{
+      padding-bottom: 238px;
     }
   }
 }
