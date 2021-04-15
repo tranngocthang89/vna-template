@@ -12,18 +12,19 @@ var swiper = new Swiper('.feature-product-swiper', {
 });
 
 var galleryThumbs = new Swiper('.gallery-thumbs', {
-    spaceBetween: 10,
-    slidesPerView: 4,
+    spaceBetween: 18,
+    slidesPerView: 'auto',
     freeMode: true,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
+    navigation: {
+        nextEl: '.swiper-button-thumb-next',
+        prevEl: '.swiper-button-thumb-prev',
+    },
 });
 var galleryTop = new Swiper('.gallery-top', {
-    spaceBetween: 10,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+    spaceBetween: 0,
+
     thumbs: {
         swiper: galleryThumbs
     }
