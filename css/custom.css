@@ -143,71 +143,73 @@ body {
     .page-payment main .container .right-payment {
       width: 360px; }
 
-.page-category main {
-  margin-top: -193px;
-  z-index: 10;
-  padding-bottom: 50px; }
-  .page-category main .block-product-detail {
-    background-color: var(--color-white);
-    padding: 21px 20px 5px;
-    border-radius: 32px;
-    margin: 0 67px;
-    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.1); }
-    .page-category main .block-product-detail .gallery-top {
-      width: 100%;
-      height: 340px; }
-      .page-category main .block-product-detail .gallery-top .swiper-slide {
-        border-radius: 20px; }
-    .page-category main .block-product-detail .gallery-thumbs {
-      margin-top: 11px;
-      height: 60px;
-      box-sizing: border-box;
-      padding: 0; }
-      .page-category main .block-product-detail .gallery-thumbs .swiper-button-gallery {
-        width: 36px;
-        height: 36px;
-        display: block;
-        padding: 16px 12px;
-        box-shadow: 0 3px 10px 0 rgba(160, 111, 17, 0.16);
-        background: transparent url("/images/arrow-right-white.svg") center center no-repeat;
-        background-size: 24px;
-        position: absolute;
-        z-index: 9999;
-        border-radius: 50%;
-        top: 25%; }
-        .page-category main .block-product-detail .gallery-thumbs .swiper-button-gallery:focus {
-          border: none;
-          outline: 0; }
-        .page-category main .block-product-detail .gallery-thumbs .swiper-button-gallery.swiper-button-disabled {
-          display: none; }
-      .page-category main .block-product-detail .gallery-thumbs .swiper-button-thumb-next {
-        right: 0; }
-      .page-category main .block-product-detail .gallery-thumbs .swiper-button-thumb-prev {
-        left: 0;
-        -ms-transform: rotate(-180deg);
-        /* IE 9 */
-        transform: rotate(-180deg); }
-    .page-category main .block-product-detail .gallery-thumbs .swiper-slide {
-      width: 80px;
-      height: 100%;
-      border-radius: 8px;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center; }
-    .page-category main .block-product-detail .gallery-thumbs .swiper-slide-thumb-active {
-      position: relative; }
-      .page-category main .block-product-detail .gallery-thumbs .swiper-slide-thumb-active::after {
-        content: '';
-        position: absolute;
+.page-detail {
+  background-image: linear-gradient(to bottom, #edeeef, #f2f0f0); }
+  .page-detail main {
+    margin-top: -193px;
+    z-index: 10;
+    padding-bottom: 50px; }
+    .page-detail main .block-product-detail {
+      background-color: var(--color-white);
+      padding: 21px 20px 5px;
+      border-radius: 32px;
+      margin: 0 67px;
+      box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.1); }
+      .page-detail main .block-product-detail .gallery-top {
         width: 100%;
+        height: 340px; }
+        .page-detail main .block-product-detail .gallery-top .swiper-slide {
+          border-radius: 20px; }
+      .page-detail main .block-product-detail .gallery-thumbs {
+        margin-top: 11px;
+        height: 60px;
+        box-sizing: border-box;
+        padding: 0; }
+        .page-detail main .block-product-detail .gallery-thumbs .swiper-button-gallery {
+          width: 36px;
+          height: 36px;
+          display: block;
+          padding: 16px 12px;
+          box-shadow: 0 3px 10px 0 rgba(160, 111, 17, 0.16);
+          background: transparent url("/images/arrow-right-white.svg") center center no-repeat;
+          background-size: 24px;
+          position: absolute;
+          z-index: 9999;
+          border-radius: 50%;
+          top: 25%; }
+          .page-detail main .block-product-detail .gallery-thumbs .swiper-button-gallery:focus {
+            border: none;
+            outline: 0; }
+          .page-detail main .block-product-detail .gallery-thumbs .swiper-button-gallery.swiper-button-disabled {
+            display: none; }
+        .page-detail main .block-product-detail .gallery-thumbs .swiper-button-thumb-next {
+          right: 0; }
+        .page-detail main .block-product-detail .gallery-thumbs .swiper-button-thumb-prev {
+          left: 0;
+          -ms-transform: rotate(-180deg);
+          /* IE 9 */
+          transform: rotate(-180deg); }
+      .page-detail main .block-product-detail .gallery-thumbs .swiper-slide {
+        width: 80px;
         height: 100%;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
         border-radius: 8px;
-        border: solid 2px #006885;
-        background: rgba(10, 38, 46, 0.6) url("/images/ico-witness.svg") center center no-repeat; }
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; }
+      .page-detail main .block-product-detail .gallery-thumbs .swiper-slide-thumb-active {
+        position: relative; }
+        .page-detail main .block-product-detail .gallery-thumbs .swiper-slide-thumb-active::after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          border-radius: 8px;
+          border: solid 2px #006885;
+          background: rgba(10, 38, 46, 0.6) url("/images/ico-witness.svg") center center no-repeat; }
 
 header {
   display: flex;
@@ -322,13 +324,13 @@ header {
   .page-home header .header-content {
     padding-bottom: 238px; }
 
-.page-category header .header-content {
+.page-detail header .header-content {
   max-height: 488px;
   height: 488px;
   width: 100%;
   margin-top: 50px;
   overflow: hidden; }
-  .page-category header .header-content .header-title {
+  .page-detail header .header-content .header-title {
     font-size: 40px;
     margin-top: 115px;
     font-family: OpenSans, serif;
@@ -336,9 +338,9 @@ header {
     width: 100%;
     text-align: center;
     z-index: 4; }
-  .page-category header .header-content .header-banner {
+  .page-detail header .header-content .header-banner {
     position: relative; }
-    .page-category header .header-content .header-banner:after {
+    .page-detail header .header-content .header-banner:after {
       content: '';
       background-color: rgba(0, 0, 0, 0.6);
       z-index: 2;
