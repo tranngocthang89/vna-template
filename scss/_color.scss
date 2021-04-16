@@ -1,8 +1,14 @@
-:root{
+:root {
   --color-main: #006885;
   --color-white: #FFF;
   --color-organ: #dba410;
   --color-text: #032136;
 }
-$successTextColor : #0a262e;
-$successContentBoxTextColor:#2e515c;
+$mainFontSize:14px;
+$successTextColor: #0a262e;
+$successContentBoxTextColor: #2e515c;
+$paymentTextColor: #5b637b;
+$paymentRightTextColor: #4e646a;
+$paymentTitleColor:#242f52;
+$paymentInputTextPlaceholderColor:#969eb2;
+$radioButtonActiveColor: #dba410;
