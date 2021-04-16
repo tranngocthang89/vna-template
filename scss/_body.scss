@@ -186,11 +186,12 @@ body {
 .page-payment {
   main {
     padding-top: 60px;
+
     .container {
       justify-content: center;
 
       .box-payment {
-        color:#5b637b;
+        color: #5b637b;
         padding: 28px 23px 20px 29px;
         border-radius: 24px;
         background-color: #f5f7fa;
@@ -213,6 +214,7 @@ body {
 
 .page-detail {
   background-image: linear-gradient(to bottom, #edeeef, #f2f0f0);
+
   main {
     margin-top: -193px;
     z-index: 10;
@@ -310,13 +312,24 @@ body {
   background-image: linear-gradient(to bottom, #edeeef, #f2f0f0);
 
   main {
-    margin-top: -213px;
+    margin-top: -211px;
     z-index: 10;
     padding-bottom: 50px;
 
-    .product-block{
+    .product-block {
       padding-top: 0;
+      padding-bottom: 0;
       border-radius: 32px;
+
+      .category-item {
+        margin-bottom: 10px;
+        .category-title {
+          margin-bottom: 18px;
+          font-family: 'OpenSans', sans-serif;
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
     }
   }
 }
