@@ -288,8 +288,10 @@ a {
 
 .product-content-detail {
   margin-top: 35px;
+
   .nav-tabs {
     border-bottom: 1px solid #0a262e;
+
     .nav-link {
       font-family: 'OpenSans', serif;
       font-size: 22px;
@@ -310,49 +312,54 @@ a {
     padding: 10px 0;
     color: #2e515c;
 
-    ul{
+    ul {
       display: flex;
       flex-wrap: wrap;
       margin: 0;
       padding: 0;
       justify-content: space-between;
-        li{
-          background-color: #f4f7fa;
-          border-radius: 8px;
-          display: flex;
-          align-items: center;
-          align-content: center;
-          width: 32%;
-          margin-bottom: 10px;
-          padding: 8px 8px 10px;
-          position: relative;
-          img{
-            padding: 0 10px;
-            height: 32px;
-            width: 52px;
-            margin-right: 10px;
-            border-right: 1px solid #e4e8ed;
-          }
+
+      li {
+        background-color: #f4f7fa;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        width: 32%;
+        margin-bottom: 10px;
+        padding: 8px 8px 10px;
+        position: relative;
+
+        img {
+          padding: 0 10px;
+          height: 32px;
+          width: 52px;
+          margin-right: 10px;
+          border-right: 1px solid #e4e8ed;
         }
+      }
     }
   }
 }
-.block-filter{
-    height: 60px;
+
+.block-filter {
+  height: 60px;
   border-bottom: 1px solid #edeeef;
-    select{
-      height: 100%;
-      border: none;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      color: #728388;
-      background:  transparent url("/images/icon-polygon-down.svg") right 10px center no-repeat;
-      padding-right: 24px;
-      &:focus{
-        box-shadow: none;
-        border: 0;
-        outline: 0;
-      }
+
+  select {
+    height: 100%;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: #728388;
+    background: transparent url("/images/icon-polygon-down.svg") right 10px center no-repeat;
+    padding-right: 24px;
+
+    &:focus {
+      box-shadow: none;
+      border: 0;
+      outline: 0;
     }
+  }
 }
 
