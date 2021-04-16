@@ -33,3 +33,11 @@ A
 scss/_footer.scss,f/6/f62faaa58fff1ff2cc2f93d6c24506d8ef1c6b2c
 C
 scss/_response.scss,d/a/dafca90ecce2d2127f24c4f00f99d0d7d3357ea5
+S
+#.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
+L
+images/arrow-right-white.svg,9/1/91d0c11aebe9d95a107ba5ca18c609d385beda9e
+F
+images/ico-witness.svg,b/f/bfc40149995249082c135ecd90d04364fa26808f
+=
+category.html,3/2/323827b97a37e24533c5982ff0d4c887de729dab

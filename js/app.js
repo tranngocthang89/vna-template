@@ -33,8 +33,8 @@ let $ = jQuery;
 $('.btn-number').click(function(e){
     e.preventDefault();
 
-    fieldName = $(this).attr('data-field');
-    type      = $(this).attr('data-type');
+    let fieldName = $(this).attr('data-field');
+    let type      = $(this).attr('data-type');
     var input = $("input[name='"+fieldName+"']");
     var currentVal = parseInt(input.val());
     if (!isNaN(currentVal)) {
@@ -43,8 +43,9 @@ $('.btn-number').click(function(e){
             if(currentVal > input.attr('min')) {
                 input.val(currentVal - 1).change();
             }
-            if(parseInt(input.val()) === input.attr('min')) {
-                $(this).attr('disabled', true);
+            if(parseInt(input.val()) === parseInt(input.attr('min'))) {
+
+                $(this).addClass('btn-disable-count').attr('disabled', true);
             }
 
         } else if(type === 'plus') {
@@ -52,8 +53,8 @@ $('.btn-number').click(function(e){
             if(currentVal < input.attr('max')) {
                 input.val(currentVal + 1).change();
             }
-            if(parseInt(input.val()) === input.attr('max')) {
-                $(this).attr('disabled', true);
+            if(parseInt(input.val()) === parseInt(input.attr('max'))) {
+                $(this).addClass('btn-disable-count').attr('disabled', true);
             }
 
         }
@@ -72,13 +73,13 @@ $('.input-number').change(function() {
 
     name = $(this).attr('name');
     if(valueCurrent >= minValue) {
-        $(".btn-number[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
+        $(".btn-number[data-type='minus'][data-field='"+name+"']").removeAttr('disabled').removeClass('btn-disable-count')
     } else {
         alert('Sorry, the minimum value was reached');
         $(this).val($(this).data('oldValue'));
     }
     if(valueCurrent <= maxValue) {
-        $(".btn-number[data-type='plus'][data-field='"+name+"']").removeAttr('disabled')
+        $(".btn-number[data-type='plus'][data-field='"+name+"']").removeAttr('disabled').removeClass('btn-disable-count')
     } else {
         alert('Sorry, the maximum value was reached');
         $(this).val($(this).data('oldValue'));
