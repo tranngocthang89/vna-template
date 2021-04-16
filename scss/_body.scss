@@ -305,3 +305,18 @@ body {
 
   }
 }
+
+.page-category {
+  background-image: linear-gradient(to bottom, #edeeef, #f2f0f0);
+
+  main {
+    margin-top: -213px;
+    z-index: 10;
+    padding-bottom: 50px;
+
+    .product-block{
+      padding-top: 0;
+      border-radius: 32px;
+    }
+  }
+}

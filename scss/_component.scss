@@ -337,4 +337,22 @@ a {
     }
   }
 }
+.block-filter{
+    height: 60px;
+  border-bottom: 1px solid #edeeef;
+    select{
+      height: 100%;
+      border: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      color: #728388;
+      background:  transparent url("/images/icon-polygon-down.svg") right 10px center no-repeat;
+      padding-right: 24px;
+      &:focus{
+        box-shadow: none;
+        border: 0;
+        outline: 0;
+      }
+    }
+}
 

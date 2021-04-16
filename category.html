@@ -10,7 +10,7 @@
 
 
 </head>
-<body class="page-detail">
+<body class="page-category">
 
 <header>
     <div class="header-nav container-custom d-flex align-content-center fixed-top w-100">
@@ -53,194 +53,127 @@
 
 <main class="">
     <div class="block-container container pb-2">
-        <div class="block-product-detail">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="row">
-                        <div class="col-lg-6 pr-0">
-                            <div class="swiper-container gallery-top">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide"
-                                         style="background-image:url(./images/resource/image.png)"></div>
-                                    <div class="swiper-slide"
-                                         style="background-image:url(./images/resource/image.png)"></div>
-                                    <div class="swiper-slide"
-                                         style="background-image:url(./images/resource/image.png)"></div>
-                                    <div class="swiper-slide"
-                                         style="background-image:url(./images/resource/image.png)"></div>
-                                    <div class="swiper-slide"
-                                         style="background-image:url(./images/resource/image.png)"></div>
-                                    <div class="swiper-slide"
-                                         style="background-image:url(./images/resource/image.png)"></div>
-                                    <div class="swiper-slide"
-                                         style="background-image:url(./images/resource/image.png)"></div>
-                                    <div class="swiper-slide"
-                                         style="background-image:url(./images/resource/image.png)"></div>
-                                    <div class="swiper-slide"
-                                         style="background-image:url(./images/resource/image.png)"></div>
-                                    <div class="swiper-slide"
-                                         style="background-image:url(./images/resource/image.png)"></div>
-                                </div>
+        <div class="row">
+            <div class="col-lg-12">
 
-                            </div>
-                            <div class="swiper-container gallery-thumbs">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide"
-                                         style="background-image:url(./images/resource/image.png)"></div>
-                                    <div class="swiper-slide"
-                                         style="background-image:url(./images/resource/image.png)"></div>
-                                    <div class="swiper-slide"
-                                         style="background-image:url(./images/resource/image.png)"></div>
-                                    <div class="swiper-slide"
-                                         style="background-image:url(./images/resource/image.png)"></div>
-                                    <div class="swiper-slide"
-                                         style="background-image:url(./images/resource/image.png)"></div>
-                                    <div class="swiper-slide"
-                                         style="background-image:url(./images/resource/image.png)"></div>
-                                    <div class="swiper-slide"
-                                         style="background-image:url(./images/resource/image.png)"></div>
-                                    <div class="swiper-slide"
-                                         style="background-image:url(./images/resource/image.png)"></div>
-                                    <div class="swiper-slide"
-                                         style="background-image:url(./images/resource/image.png)"></div>
-                                    <div class="swiper-slide"
-                                         style="background-image:url(./images/resource/image.png)"></div>
-                                </div>
-                                <!-- Add Arrows -->
-                                <div class="swiper-button-thumb-next swiper-button-gallery"></div>
-                                <div class="swiper-button-thumb-prev swiper-button-gallery"></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="product-item">
-                                <h4 class="product-title">
-                                    Voucher 1 lần sử dụng phòng chờ Nasco Quốc Tế - Dành cho người lớn
-                                </h4>
-                                <h4 class="product-price">
-                                    300.000đ
-                                    <span class="old-price">360.000đ</span>
-                                </h4>
-                                <div class="product-quantity">
-                                    <h4>Số lượng:</h4>
-                                    <div class="input-group">
-                                          <span class="input-group-btn">
-                                              <button type="button" class="btn btn-number btn-minus btn-disable-count"
-                                                      disabled="disabled" data-type="minus"
-                                                      data-field="quant[1]">
-                                                 <span></span>
-                                              </button>
-                                          </span>
-                                        <input type="text" name="quant[1]" readonly class="form-control input-number" value="1"
-                                               min="1" max="10">
-                                        <span class="input-group-btn">
-                                          <button type="button" class="btn btn-number btn-plus" data-type="plus"
-                                                  data-field="quant[1]">
-                                              <span></span>
-                                          </button>
-                                      </span>
-                                    </div>
-                                </div>
-                                <div class="product-place">
-                                    <h4>Địa điểm</h4>
-                                    <ul>
-                                        <li>Địa điểm:
-                                            Hà Nội: Tầng 3 khu vực cách ly quốc tế đi Nhà ga T2, Cảng HKQT Nội
-                                            Bài.
-                                            </li>
-                                        <li>Hồ Chí Minh: Tầng 2 khu D, khu vực cách ly nội địa đi Nhà ga T1, Cảng
-                                            HK QT Nội Bài.</li>
-                                    </ul>
-                                </div>
-                                <div class="product-info">
-                                    <span>Hạn sử dụng:</span> 30 ngày kể từ ngày mua Evoucher
-                                </div>
-                                <div class="product-info">
-                                    <span>Giá trị voucher:</span>  Mỗi voucher được sử dụng cho 1 người lớn, một trẻ em dưới 7 tuổi và áp dụng trên hệ thống phòng chờ của Vietnam Airlines.
-                                </div>
-                                <div class="action-checkout">
-                                    <a href="#" class="btn btn-organ">Thanh toán ngay</a>
-                                </div>
-                            </div>
+                <div class="product-block">
+                    <div class="block-filter d-flex justify-content-end">
+                        <form action="" class="text-right">
+                            <select name="city" id="city">
+                                <option value="0">Tất cả địa điểm</option>
+                                <option value="29">Hà Nội</option>
+                                <option value="22">Hồ Chí Minh</option>
 
-                        </div>
+                            </select>
+                            <select name="order" id="order">
+                                <option value="1">Giá từ cao đến thấp</option>
+                                <option value="2">Giá từ thấp đến cao</option>
+                                <option value="3">Hồ Chí Minh</option>
+
+                            </select>
+                        </form>
                     </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="product-content-detail">
-                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                            <button class="nav-link active" id="nav-general-info" data-bs-toggle="tab"
-                                    data-bs-target="#general-info" type="button" role="tab" aria-controls="general-info"
-                                    aria-selected="true">Thông tin chung
-                            </button>
-                            <button class="nav-link" id="nav-term-cond" data-bs-toggle="tab"
-                                    data-bs-target="#term-cond"
-                                    type="button" role="tab" aria-controls="term-cond" aria-selected="false">
-                                Điều kiện sử dụng
-                            </button>
-
-                        </div>
-                        <div class="tab-content" id="nav-tabContent">
-                            <div class="tab-pane fade show active" id="general-info" role="tabpanel"
-                                 aria-labelledby="nav-general-info">
-
-                                <div class="d-flex flex-wrap justify-content-between">
-                                    <p>Với trên 20 hãng Hàng không hiện đang sử dụng dịch vụ Phòng chờ hạng thương gia tại sân bay Nội Bài, NASCO đang cung cấp dịch vụ Phòng chờ đạt tiêu chuẩn từ 4 đến 5 sao đáp ứng nhu cầu của các hãng hàng không, các tổ chức, các tập đoàn lớn trong và ngoài nước.
-                                        Phòng chờ sang trọng, tầm nhìn trải rộng ra khu vực sân đỗ tàu bay với Hệ thống trang thiết bị phục vụ hiện đại, dịch vụ tiện ích như:</p>
-                                        <ul>
-                                            <li>
-                                                <img src="/images/ico-witness.svg" alt="">
-                                                Hệ thống ghế Massage thư giãn
-                                            </li>
-                                            <li>
-                                                Phòng hút thuốc riêng biệt
-                                            </li>
-                                            <li>
-                                                Hơn 40 loại đồ uống bao gồm cả các loại
-                                                rượu mạnh, rượu vang và cocktail
-                                            </li>
-                                            <li>
-                                                Đồ ăn Buffet Á, Âu, đồ ăn kiêng… với nhiều
-                                                sự lựa chọn đa dạng, phong phú
-                                            </li>
-                                            <li>
-                                                Các loại trái cây tươi theo mùa
-                                            </li>
-                                            <li>
-                                                Hệ thống máy tính tốc độ cao có kết
-                                                nối Internet, Free Wifi
-                                            </li>
-                                            <li>
-                                                Hơn 20 ấn phẩm báo chí, tạp chí trong nước
-                                                và quốc tế với các ngôn ngữ Việt, Anh…
-                                            </li>
-                                            <li>
-                                                Hệ thống truyền hình giải trí hiện đại
-                                            </li>
-                                            <li>
-                                                Khu vực trang bị máy photocopy, máy fax
-                                                scan, máy in…
-                                            </li>
-                                            <li>
-                                                Phòng tắm tiện nghi
-                                            </li>
-                                            <li>
-                                                Có tủ treo áo khoác, giá để hành lý
-                                            </li>
-                                        </ul>
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <div class="block-item">
+                            <div class="block-main-img"
+                                 style="background-image: url('/images/product.png')"></div>
+                            <div class="block-item-content">
+                                <div class="block-content-title">
+                                    Voucher 1 lần sử dụng phòng chờ Nassco Quốc Nội - Dành cho người lớn
+                                </div>
+                                <div class="block-content-price">
+                                    360.000đ
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="term-cond" role="tabpanel"
-                                 aria-labelledby="nav-term-cond">
-                                ...
-                            </div>
-
                         </div>
-
+                        <div class="block-item">
+                            <div class="block-main-img"
+                                 style="background-image: url('/images/product.png')"></div>
+                            <div class="block-item-content">
+                                <div class="block-content-title">
+                                    Voucher 1 lần sử dụng phòng chờ Nassco Quốc Nội - Dành cho người lớn
+                                </div>
+                                <div class="block-content-price">
+                                    360.000đ
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-item">
+                            <div class="block-main-img"
+                                 style="background-image: url('/images/product.png')"></div>
+                            <div class="block-item-content">
+                                <div class="block-content-title">
+                                    Voucher 1 lần sử dụng phòng chờ Nassco Quốc Nội - Dành cho người lớn
+                                </div>
+                                <div class="block-content-price">
+                                    360.000đ
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-item">
+                            <div class="block-main-img"
+                                 style="background-image: url('/images/product.png')"></div>
+                            <div class="block-item-content">
+                                <div class="block-content-title">
+                                    Voucher 1 lần sử dụng phòng chờ Nassco Quốc Nội - Dành cho người lớn
+                                </div>
+                                <div class="block-content-price">
+                                    360.000đ
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-item">
+                            <div class="block-main-img"
+                                 style="background-image: url('/images/product.png')"></div>
+                            <div class="block-item-content">
+                                <div class="block-content-title">
+                                    Voucher 1 lần sử dụng phòng chờ Nassco Quốc Nội - Dành cho người lớn
+                                </div>
+                                <div class="block-content-price">
+                                    360.000đ
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-item">
+                            <div class="block-main-img"
+                                 style="background-image: url('/images/product.png')"></div>
+                            <div class="block-item-content">
+                                <div class="block-content-title">
+                                    Voucher 1 lần sử dụng phòng chờ Nassco Quốc Nội - Dành cho người lớn
+                                </div>
+                                <div class="block-content-price">
+                                    360.000đ
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-item">
+                            <div class="block-main-img"
+                                 style="background-image: url('/images/product.png')"></div>
+                            <div class="block-item-content">
+                                <div class="block-content-title">
+                                    Voucher 1 lần sử dụng phòng chờ Nassco Quốc Nội - Dành cho người lớn
+                                </div>
+                                <div class="block-content-price">
+                                    360.000đ
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-item">
+                            <div class="block-main-img"
+                                 style="background-image: url('/images/product.png')"></div>
+                            <div class="block-item-content">
+                                <div class="block-content-title">
+                                    Voucher 1 lần sử dụng phòng chờ Nassco Quốc Nội - Dành cho người lớn
+                                </div>
+                                <div class="block-content-price">
+                                    360.000đ
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
 </main>
 
