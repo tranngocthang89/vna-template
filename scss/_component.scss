@@ -363,3 +363,47 @@ a {
   }
 }
 
+
+.form-check-input[type=radio] {
+  width: 20px;
+  height: 20px;
+  border: solid 1px #d7dae2;
+  background-color: $radioButtonBackground;
+  margin-right:10px;
+}
+
+.form-check-input:checked[type=radio] {
+  background-image: none;
+  padding: 2px;
+  position: relative;
+  border: solid 1px #006885;
+  background-color: $radioButtonActiveBackground;
+}
+
+.form-check-input:checked[type=radio]:after {
+  background-color: $radioButtonActiveColor;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  border-radius: 50%;
+}
+
+.form-check-input:focus {
+  box-shadow: none;
+}
+
+.form-check-input[type=checkbox] {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  margin-right:0;
+  background-color: $radioButtonBackground;
+}
+
+.form-check-input:checked[type=checkbox] {
+  background-color: var(--color-main);
+}

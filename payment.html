@@ -50,35 +50,33 @@
                 1.Mua voucher
             </div>
             <div>Hình thức nhận eVoucher</div>
-            <div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                           value="option1">
-                    <label class="form-check-label" for="inlineRadio1">SMS</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                           value="option2">
-                    <label class="form-check-label" for="inlineRadio2">Email</label>
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput" class="form-label">Số lượng voucher muốn mua</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput">
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                    <label class="form-check-label" for="flexCheckChecked">
-                        Định danh cho voucher bằng xác thực CMND/Hộ chiếu<br>
-                        (Giúp việc sử dụng voucher của bạn được an toàn và bảo mật hơn).
-                    </label>
-                </div>
-                <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Tên trên CMND/Hộ chiếu">
-                    <input type="text" class="form-control" placeholder="Số CMND/Hộ chiếu">
-                </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                       value="option1">
+                <label class="form-check-label" for="inlineRadio1">SMS</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                       value="option2">
+                <label class="form-check-label" for="inlineRadio2">Email</label>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput" class="form-label">Số lượng voucher muốn mua</label>
+                <input type="text" class="form-control" id="exampleFormControlInput">
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Định danh cho voucher bằng xác thực CMND/Hộ chiếu<br>
+                    <i>(Giúp việc sử dụng voucher của bạn được an toàn và bảo mật hơn).</i>
+                </label>
+            </div>
+            <div class="mb-3 input-text-group">
+                <input type="text" class="form-control" placeholder="Tên trên CMND/Hộ chiếu">
+                <input type="text" class="form-control" placeholder="Số CMND/Hộ chiếu">
             </div>
             <div class="payment-title">
-                1.Thanh toán
+                2.Thanh toán
             </div>
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
@@ -86,9 +84,144 @@
                 <label class="form-check-label" for="inlineRadio1">Thẻ quốc tế (Master Card, JCB, Visa)</label>
             </div>
             <div>Vui lòng nhập thông tin thẻ</div>
+            <div class="mb-3">
+                <label for="cardNumber" class="form-label">Số thẻ*</label>
+                <input type="text" class="form-control" id="cardNumber" required>
+            </div>
+            <div class="mb-3">
+                <label for="cardNumber" class="form-label">Tên in trên thẻ*</label>
+                <input type="text" class="form-control" id="cardNumber" required>
+            </div>
+            <div class="row">
+                <div class="col-6 mb-3">
+                    <label for="name" class="form-label">Ngày hết hạn*</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="col-3 mb-3">
+                    <label for="name" class="form-label">Mã bảo mật*</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="col-3">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Thẻ thanh toán nội địa (ATM)
+                </label>
+            </div>
+            <div class="form-check margin-bottom-40">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Quét QR code (VNPay)
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Xuất hoá đơn VAT
+                </label>
+            </div>
+            <div class="mb-3 input-text-group">
+                <input type="text" class="form-control" placeholder="Tên công ty">
+                <input type="text" class="form-control" placeholder="Mã số thuế">
+                <input type="email" class="form-control" placeholder="Địa chỉ email">
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Địa chỉ công ty" id="floatingTextarea2"
+                              style="height: 100px"></textarea>
+                </div>
+            </div>
+            <div class="note">
+                <div class="note-title">
+                    Lưu ý
+                </div>
+                <div class="note-content">
+                    <ul>
+                        <li>
+                            Hóa đơn cho sản phẩm sẽ được xuất trong 14 ngày kể từ thời điểm quý khách thanh toán.
+                        </li>
+                        <li>
+                            Vietnam Airlines từ chối xử lý các yêu cầu phát sinh trong việc kê khai thuế đối với những
+                            hóa đơn từ 20 triệu đồng trở lên thanh toán bằng tiền mặt
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Tôi tự nguyện cung cấp thông tin cho UrBox cho mục đích
+                    giao quà.
+                </label>
+            </div>
+            <div class="btn-payment">
+                <a href="" data-bs-toggle="modal" data-bs-target="#modalPaymentFailed">Thanh toán</a>
+            </div>
+            <div class="term-and-condition">
+                <a href="">Chinhs sách voucher</a>&nbsp;và <a href="">hướng dẫn sử dụng</a>
+            </div>
         </div>
         <div class="right-payment box-payment">
-            Voucher đã chọn
+            <div class="payment-title">
+                Voucher đã chọn
+            </div>
+            <div class="img-voucher">
+                <img src="images/resource/image.png" alt="">
+            </div>
+            <div class="payment-title">
+                Voucher 1 lần sử dụng phòng....
+            </div>
+            <div class="voucher">
+                <div>
+                    Mệnh giá: <span>300.000đ</span>
+                </div>
+                <div>
+                    Số lượng: <span>01</span>
+                </div>
+                <div>
+                    Thành tiền: <span class="price">300.000đ</span>
+                </div>
+            </div>
+            <hr class="hr-voucher">
+            <div class="payment-title">
+                Thông tin phòng chờ:
+            </div>
+            <div>
+                Giờ mở cửa: Từ 4:30 sáng đến chuyến bay cuối.
+            </div>
+            <div class="location">
+                Địa điểm
+                <ul>
+                    <li>
+                        Hà Nội: Tầng 3 khu vực cách ly quốc tế đi
+                        Nhà ga T2, Cảng HKQT Nội Bài.
+                    </li>
+                    <li>
+                        Hồ Chí Minh: Tầng 2 khu D, khu vực cách ly
+                        nội địa đi Nhà ga T1, Cảng HK QT Nội Bài.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal fade" id="modalPaymentFailed" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+             aria-labelledby="modalPaymentFailedLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="popup-payment-failed-header">
+                            Thanh toán chưa thành công!
+                        </div>
+                        <div class="popup-payment-failed-content">
+                            Vui lòng kiểm tra lại thông tin thẻ và thử <br> lại hoặc liên hệ hotline: 1900 0000
+                        </div>
+                        <div class="popup-payment-button">
+                            <a href="">Thử lại</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </section>
 </main>
@@ -99,6 +232,7 @@
             <img class='footer-logo' src="/images/logo_footer.png" alt="">
         </div>
     </div>
+
 </footer>
 
 </body>
