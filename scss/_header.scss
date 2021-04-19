@@ -23,7 +23,6 @@ header {
       line-height: 1.25;
       color: #0a262e;
       display: block;
-      margin-top: 100px;
       text-transform: uppercase;
 
       span {
@@ -48,7 +47,7 @@ header {
         box-sizing: border-box;
         padding: 20px;
         cursor: pointer;
-        margin-bottom: 35px;
+        margin-bottom: 40px;
         position: relative;
 
         &:hover,
@@ -164,7 +163,10 @@ header {
     }
 
     .header-content {
-      padding-bottom: 238px;
+      padding-bottom: 231px;
+      .header-title{
+        margin-top: 145px;
+      }
     }
   }
 }
