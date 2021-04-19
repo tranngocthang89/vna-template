@@ -92,7 +92,7 @@ header {
   }
 
   .navbar {
-    padding: 6px 0;
+    padding: 2px 0;
 
     .navbar-brand {
       padding: 0;
@@ -140,7 +140,7 @@ header {
       background-color: var(--color-main);
       border-radius: 20px;
       border: solid 1px #ffffff;
-      width: 168px;
+      width: 166px;
       height: 40px;
       color: var(--color-white) !important;
       font-size: 14px;
@@ -175,7 +175,14 @@ header {
 .page-category
 {
   header {
-
+    .header-nav{
+      .navbar {
+        padding: 0;
+       .nav-link{
+         padding: 16px 0;
+       }
+      }
+    }
     .header-content {
       max-height: 488px;
       height: 488px;

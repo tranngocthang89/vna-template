@@ -317,12 +317,20 @@ body {
 .page-category {
   background-image: linear-gradient(to bottom, #edeeef, #f2f0f0); }
   .page-category main {
-    margin-top: -213px;
+    margin-top: -211px;
     z-index: 10;
     padding-bottom: 50px; }
     .page-category main .product-block {
       padding-top: 0;
+      padding-bottom: 0;
       border-radius: 32px; }
+      .page-category main .product-block .category-item {
+        margin-bottom: 8px; }
+        .page-category main .product-block .category-item .category-title {
+          margin-bottom: 18px;
+          font-family: "OpenSans", sans-serif;
+          font-size: 20px;
+          font-weight: 600; }
 
 header {
   display: flex;
@@ -390,7 +398,7 @@ header {
           position: relative;
           margin-left: 10px; }
   header .navbar {
-    padding: 6px 0; }
+    padding: 2px 0; }
     header .navbar .navbar-brand {
       padding: 0; }
       header .navbar .navbar-brand .logo_lotus {
@@ -419,7 +427,7 @@ header {
       background-color: var(--color-main);
       border-radius: 20px;
       border: solid 1px #ffffff;
-      width: 168px;
+      width: 166px;
       height: 40px;
       color: var(--color-white) !important;
       font-size: 14px;
@@ -438,6 +446,13 @@ header {
     padding-bottom: 231px; }
     .page-home header .header-content .header-title {
       margin-top: 145px; }
+
+.page-detail header .header-nav .navbar,
+.page-category header .header-nav .navbar {
+  padding: 0; }
+  .page-detail header .header-nav .navbar .nav-link,
+  .page-category header .header-nav .navbar .nav-link {
+    padding: 16px 0; }
 
 .page-detail header .header-content,
 .page-category header .header-content {
@@ -688,7 +703,7 @@ a {
       font-family: OpenSans, sans-serif; }
 
 .product-content-detail {
-  margin-top: 35px; }
+  margin-top: 32px; }
   .product-content-detail .nav-tabs {
     border-bottom: 1px solid #0a262e; }
     .product-content-detail .nav-tabs .nav-link {
@@ -808,6 +823,7 @@ footer {
   .header-nav {
     padding: 0 60px; }
   .header-content {
+    padding: 0;
     width: 1520px;
     margin: 0 auto; }
   .container {

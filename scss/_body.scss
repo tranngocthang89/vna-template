@@ -494,13 +494,26 @@ body {
   background-image: linear-gradient(to bottom, #edeeef, #f2f0f0);
 
   main {
-    margin-top: -213px;
+    margin-top: -211px;
     z-index: 10;
     padding-bottom: 50px;
 
     .product-block {
       padding-top: 0;
+      padding-bottom: 0;
       border-radius: 32px;
+      .category-item{
+        margin-bottom: 8px;
+        &:last-child{
+         }
+        .category-title {
+
+          margin-bottom: 18px;
+          font-family: "OpenSans", sans-serif;
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
     }
   }
 }
