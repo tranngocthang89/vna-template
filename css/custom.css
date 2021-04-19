@@ -790,6 +790,13 @@ footer {
   footer .footer-logo {
     width: 170px; }
 
+@media (min-width: 1200px) {
+  .header-nav {
+    padding: 0 60px; }
+  .header-content {
+    padding: 0 60px;
+    margin: 0 auto; } }
+
 @media (min-width: 1400px) {
   .header-nav {
     padding: 0 60px; }
