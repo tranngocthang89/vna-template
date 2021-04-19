@@ -226,7 +226,9 @@ body {
       .page-payment main .container #modalPaymentFailed .modal-content .modal-body {
         padding: 24px 0 30px; }
         .page-payment main .container #modalPaymentFailed .modal-content .modal-body .popup-payment-failed-header {
-          font-size: 20px; }
+          font-size: 24px;
+          font-weight: bold;
+          margin-bottom: 9px; }
         .page-payment main .container #modalPaymentFailed .modal-content .modal-body .popup-payment-failed-content {
           font-size: 16px; }
           .page-payment main .container #modalPaymentFailed .modal-content .modal-body .popup-payment-failed-content span {
@@ -238,7 +240,8 @@ body {
           background-color: var(--color-main);
           display: flex;
           align-items: center;
-          justify-content: center; }
+          justify-content: center;
+          border-radius: 8px; }
           .page-payment main .container #modalPaymentFailed .modal-content .modal-body .popup-payment-button a {
             font-size: 16px;
             color: #fff; }
@@ -314,20 +317,12 @@ body {
 .page-category {
   background-image: linear-gradient(to bottom, #edeeef, #f2f0f0); }
   .page-category main {
-    margin-top: -211px;
+    margin-top: -213px;
     z-index: 10;
     padding-bottom: 50px; }
     .page-category main .product-block {
       padding-top: 0;
-      padding-bottom: 0;
       border-radius: 32px; }
-      .page-category main .product-block .category-item {
-        margin-bottom: 10px; }
-        .page-category main .product-block .category-item .category-title {
-          margin-bottom: 18px;
-          font-family: 'OpenSans', sans-serif;
-          font-size: 20px;
-          font-weight: 600; }
 
 header {
   display: flex;

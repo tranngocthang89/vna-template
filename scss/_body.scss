@@ -304,13 +304,99 @@ body {
 
       .right-payment {
         width: 360px;
+        height: 526px;
+        text-align: left;
+
+        .payment-title {
+          font-size: 14px;
+          color: $paymentTitleColor;
+          font-weight: bold;
+        }
+
+        .img-voucher {
+          margin: 14px 0 16px 0;
+
+          img {
+            width: 100%;
+            height: 158px;
+            border-radius: 8px;
+          }
+        }
+
+        .voucher {
+          div {
+            span {
+              float: right;
+            }
+
+            .price {
+              font-size: 20px;
+              color: $radioButtonActiveColor;
+              font-weight: bold;
+            }
+          }
+        }
+
+        .hr-voucher {
+        }
+
+        .location {
+          ul {
+            padding-left: 1em;
+          }
+        }
+      }
+
+      #modalPaymentFailed {
+        .modal-content {
+          top: 256px;
+          height: 210px;
+          border-radius: 20px;
+          text-align: center;
+
+          .modal-body {
+            padding: 24px 0 30px;
+
+            .popup-payment-failed-header {
+              font-size: 24px;
+              font-weight: bold;
+              margin-bottom: 9px;
+            }
+
+            .popup-payment-failed-content {
+              font-size: 16px;
+
+              span {
+                color: $radioButtonActiveColor;
+              }
+            }
+
+            .popup-payment-button {
+              width: 206px;
+              margin: 28px auto;
+              height: 40px;
+              background-color: var(--color-main);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius:8px;
+              a {
+                font-size: 16px;
+                color: #fff;
+              }
+            }
+          }
+
+        }
       }
     }
   }
+
 }
 
 .page-detail {
   background-image: linear-gradient(to bottom, #edeeef, #f2f0f0);
+
   main {
     margin-top: -193px;
     z-index: 10;
@@ -412,7 +498,7 @@ body {
     z-index: 10;
     padding-bottom: 50px;
 
-    .product-block{
+    .product-block {
       padding-top: 0;
       border-radius: 32px;
     }
