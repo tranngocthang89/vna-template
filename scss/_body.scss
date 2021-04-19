@@ -189,10 +189,11 @@ body {
 
     .container {
       justify-content: center;
+      font-family: "Open Sans", sans-serif;
 
       .box-payment {
-        color: #5b637b;
-        padding: 28px 23px 20px 29px;
+        color: $paymentTextColor;
+        padding: 26px 23px 20px 26px;
         border-radius: 24px;
         background-color: #f5f7fa;
         box-shadow: 0 4px 30px 0 rgba(36, 47, 82, 0.1);
@@ -203,13 +204,194 @@ body {
         width: 500px;
         margin-right: 50px;
         text-align: left;
+
+        .form-check-inline {
+          label {
+            line-height: 27px;
+          }
+        }
+
+        .form-control {
+          border-radius: 8px;
+          border: 1px solid $borderTextInputColor;
+          background-color: $radioButtonBackground;
+        }
+
+        .form-control::-webkit-input-placeholder { /* Edge */
+          color: $paymentInputTextPlaceholderColor;
+          font-size: $mainFontSize;
+        }
+
+        .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+          color: $paymentInputTextPlaceholderColor;
+          font-size: $mainFontSize;
+
+        }
+
+        .form-control::placeholder {
+          color: $paymentInputTextPlaceholderColor;
+          font-size: $mainFontSize;
+
+        }
+
+        label {
+          i {
+            font-size: 13px;
+          }
+        }
+
+        .payment-title {
+          font-size: 16px;
+          color: $paymentTitleColor;
+          font-weight: bold;
+        }
+
+        .input-text-group {
+          input {
+            margin-top: 12px;
+            margin-bottom: 12px;
+          }
+        }
+
+        .margin-bottom-40 {
+          margin-bottom: 40px;
+        }
+
+        .note {
+          .note-title {
+            font-weight: bold;
+          }
+
+          ul {
+            padding-left: 1em;
+
+            li::marker {
+              font-size: 16px;
+              color: $radioButtonActiveColor;
+            }
+          }
+        }
+
+        .btn-payment {
+          height: 40px;
+          border-radius: 8px;
+          background-color: $radioButtonActiveColor;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 30px;
+          margin-bottom: 38px;
+
+          a {
+            font-size: 16px;
+            font-weight: bold;
+            color: var(--color-white);
+          }
+        }
+
+        .term-and-condition {
+          text-align: center;
+
+          a {
+            text-decoration: underline;
+            font-style: italic;
+            color: #44a3f5;
+          }
+        }
+
       }
 
       .right-payment {
         width: 360px;
+        height: 526px;
+        text-align: left;
+
+        .payment-title {
+          font-size: 14px;
+          color: $paymentTitleColor;
+          font-weight: bold;
+        }
+
+        .img-voucher {
+          margin: 14px 0 16px 0;
+
+          img {
+            width: 100%;
+            height: 158px;
+            border-radius: 8px;
+          }
+        }
+
+        .voucher {
+          div {
+            span {
+              float: right;
+            }
+
+            .price {
+              font-size: 20px;
+              color: $radioButtonActiveColor;
+              font-weight: bold;
+            }
+          }
+        }
+
+        .hr-voucher {
+        }
+
+        .location {
+          ul {
+            padding-left: 1em;
+          }
+        }
+      }
+
+      #modalPaymentFailed {
+        .modal-content {
+          top: 256px;
+          height: 210px;
+          border-radius: 20px;
+          text-align: center;
+
+          .modal-body {
+            padding: 24px 0 30px;
+
+            .popup-payment-failed-header {
+              font-size: 24px;
+              font-weight: bold;
+              margin-bottom: 9px;
+            }
+
+            .popup-payment-failed-content {
+              font-size: 16px;
+
+              span {
+                color: $radioButtonActiveColor;
+              }
+            }
+
+            .popup-payment-button {
+              width: 206px;
+              margin: 28px auto;
+              height: 40px;
+              background-color: var(--color-main);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius:8px;
+              a {
+                font-size: 16px;
+                color: #fff;
+              }
+            }
+          }
+
+        }
       }
     }
   }
+
 }
 
 .page-detail {
@@ -312,24 +494,13 @@ body {
   background-image: linear-gradient(to bottom, #edeeef, #f2f0f0);
 
   main {
-    margin-top: -211px;
+    margin-top: -213px;
     z-index: 10;
     padding-bottom: 50px;
 
     .product-block {
       padding-top: 0;
-      padding-bottom: 0;
       border-radius: 32px;
-
-      .category-item {
-        margin-bottom: 10px;
-        .category-title {
-          margin-bottom: 18px;
-          font-family: 'OpenSans', sans-serif;
-          font-size: 20px;
-          font-weight: 600;
-        }
-      }
     }
   }
 }

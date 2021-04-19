@@ -128,10 +128,11 @@ body {
 .page-payment main {
   padding-top: 60px; }
   .page-payment main .container {
-    justify-content: center; }
+    justify-content: center;
+    font-family: "Open Sans", sans-serif; }
     .page-payment main .container .box-payment {
       color: #5b637b;
-      padding: 28px 23px 20px 29px;
+      padding: 26px 23px 20px 26px;
       border-radius: 24px;
       background-color: #f5f7fa;
       box-shadow: 0 4px 30px 0 rgba(36, 47, 82, 0.1);
@@ -140,8 +141,110 @@ body {
       width: 500px;
       margin-right: 50px;
       text-align: left; }
+      .page-payment main .container .left-payment .form-check-inline label {
+        line-height: 27px; }
+      .page-payment main .container .left-payment .form-control {
+        border-radius: 8px;
+        border: 1px solid #d7dae2;
+        background-color: #f5f7fa; }
+      .page-payment main .container .left-payment .form-control::-webkit-input-placeholder {
+        /* Edge */
+        color: #969eb2;
+        font-size: 14px; }
+      .page-payment main .container .left-payment .form-control:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #969eb2;
+        font-size: 14px; }
+      .page-payment main .container .left-payment .form-control::placeholder {
+        color: #969eb2;
+        font-size: 14px; }
+      .page-payment main .container .left-payment label i {
+        font-size: 13px; }
+      .page-payment main .container .left-payment .payment-title {
+        font-size: 16px;
+        color: #242f52;
+        font-weight: bold; }
+      .page-payment main .container .left-payment .input-text-group input {
+        margin-top: 12px;
+        margin-bottom: 12px; }
+      .page-payment main .container .left-payment .margin-bottom-40 {
+        margin-bottom: 40px; }
+      .page-payment main .container .left-payment .note .note-title {
+        font-weight: bold; }
+      .page-payment main .container .left-payment .note ul {
+        padding-left: 1em; }
+        .page-payment main .container .left-payment .note ul li::marker {
+          font-size: 16px;
+          color: #dba410; }
+      .page-payment main .container .left-payment .btn-payment {
+        height: 40px;
+        border-radius: 8px;
+        background-color: #dba410;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 38px; }
+        .page-payment main .container .left-payment .btn-payment a {
+          font-size: 16px;
+          font-weight: bold;
+          color: var(--color-white); }
+      .page-payment main .container .left-payment .term-and-condition {
+        text-align: center; }
+        .page-payment main .container .left-payment .term-and-condition a {
+          text-decoration: underline;
+          font-style: italic;
+          color: #44a3f5; }
     .page-payment main .container .right-payment {
-      width: 360px; }
+      width: 360px;
+      height: 526px;
+      text-align: left; }
+      .page-payment main .container .right-payment .payment-title {
+        font-size: 14px;
+        color: #242f52;
+        font-weight: bold; }
+      .page-payment main .container .right-payment .img-voucher {
+        margin: 14px 0 16px 0; }
+        .page-payment main .container .right-payment .img-voucher img {
+          width: 100%;
+          height: 158px;
+          border-radius: 8px; }
+      .page-payment main .container .right-payment .voucher div span {
+        float: right; }
+      .page-payment main .container .right-payment .voucher div .price {
+        font-size: 20px;
+        color: #dba410;
+        font-weight: bold; }
+      .page-payment main .container .right-payment .location ul {
+        padding-left: 1em; }
+    .page-payment main .container #modalPaymentFailed .modal-content {
+      top: 256px;
+      height: 210px;
+      border-radius: 20px;
+      text-align: center; }
+      .page-payment main .container #modalPaymentFailed .modal-content .modal-body {
+        padding: 24px 0 30px; }
+        .page-payment main .container #modalPaymentFailed .modal-content .modal-body .popup-payment-failed-header {
+          font-size: 24px;
+          font-weight: bold;
+          margin-bottom: 9px; }
+        .page-payment main .container #modalPaymentFailed .modal-content .modal-body .popup-payment-failed-content {
+          font-size: 16px; }
+          .page-payment main .container #modalPaymentFailed .modal-content .modal-body .popup-payment-failed-content span {
+            color: #dba410; }
+        .page-payment main .container #modalPaymentFailed .modal-content .modal-body .popup-payment-button {
+          width: 206px;
+          margin: 28px auto;
+          height: 40px;
+          background-color: var(--color-main);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 8px; }
+          .page-payment main .container #modalPaymentFailed .modal-content .modal-body .popup-payment-button a {
+            font-size: 16px;
+            color: #fff; }
 
 .page-detail {
   background-image: linear-gradient(to bottom, #edeeef, #f2f0f0); }
@@ -214,20 +317,12 @@ body {
 .page-category {
   background-image: linear-gradient(to bottom, #edeeef, #f2f0f0); }
   .page-category main {
-    margin-top: -211px;
+    margin-top: -213px;
     z-index: 10;
     padding-bottom: 50px; }
     .page-category main .product-block {
       padding-top: 0;
-      padding-bottom: 0;
       border-radius: 32px; }
-      .page-category main .product-block .category-item {
-        margin-bottom: 10px; }
-        .page-category main .product-block .category-item .category-title {
-          margin-bottom: 18px;
-          font-family: 'OpenSans', sans-serif;
-          font-size: 20px;
-          font-weight: 600; }
 
 header {
   display: flex;
@@ -649,6 +744,44 @@ a {
       box-shadow: none;
       border: 0;
       outline: 0; }
+
+.form-check-input[type=radio] {
+  width: 20px;
+  height: 20px;
+  border: solid 1px #d7dae2;
+  background-color: #f5f7fa;
+  margin-right: 10px; }
+
+.form-check-input:checked[type=radio] {
+  background-image: none;
+  padding: 2px;
+  position: relative;
+  border: solid 1px #006885;
+  background-color: #e9edf2; }
+
+.form-check-input:checked[type=radio]:after {
+  background-color: #dba410;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  border-radius: 50%; }
+
+.form-check-input:focus {
+  box-shadow: none; }
+
+.form-check-input[type=checkbox] {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  margin-right: 0;
+  background-color: #f5f7fa; }
+
+.form-check-input:checked[type=checkbox] {
+  background-color: var(--color-main); }
 
 footer {
   height: 60px;
