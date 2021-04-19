@@ -127,9 +127,25 @@ body {
 
 .page-payment main {
   padding-top: 60px; }
+  @media (max-width: 575px) {
+    .page-payment main {
+      padding-top: 38px; } }
+  @media (min-width: 576px) and (max-width: 767px) {
+    .page-payment main {
+      padding-top: 38px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .page-payment main {
+      padding-top: 38px; } }
   .page-payment main .container {
     justify-content: center;
-    font-family: "Open Sans", sans-serif; }
+    font-family: "Open Sans", sans-serif;
+    display: flex; }
+    @media (max-width: 575px) {
+      .page-payment main .container {
+        display: block; } }
+    @media (min-width: 576px) and (max-width: 767px) {
+      .page-payment main .container {
+        display: block; } }
     .page-payment main .container .box-payment {
       color: #5b637b;
       padding: 26px 23px 20px 26px;
@@ -137,10 +153,31 @@ body {
       background-color: #f5f7fa;
       box-shadow: 0 4px 30px 0 rgba(36, 47, 82, 0.1);
       border: solid 2px #ffffff; }
+      @media (max-width: 575px) {
+        .page-payment main .container .box-payment {
+          padding: 23px 12px 15px 12px; } }
+      @media (min-width: 576px) and (max-width: 767px) {
+        .page-payment main .container .box-payment {
+          padding: 23px 12px 15px 12px; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .page-payment main .container .box-payment {
+          padding: 23px 12px 15px 12px; } }
     .page-payment main .container .left-payment {
-      width: 500px;
+      text-align: left;
       margin-right: 50px;
-      text-align: left; }
+      width: 500px; }
+      @media (max-width: 575px) {
+        .page-payment main .container .left-payment {
+          width: auto;
+          margin-right: 0; } }
+      @media (min-width: 576px) and (max-width: 767px) {
+        .page-payment main .container .left-payment {
+          width: auto;
+          margin-right: 0; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .page-payment main .container .left-payment {
+          width: auto;
+          margin-right: 20px; } }
       .page-payment main .container .left-payment .form-check-inline label {
         line-height: 27px; }
       .page-payment main .container .left-payment .form-control {
@@ -197,9 +234,20 @@ body {
           font-style: italic;
           color: #44a3f5; }
     .page-payment main .container .right-payment {
+      text-align: left;
       width: 360px;
-      height: 526px;
-      text-align: left; }
+      height: 526px; }
+      @media (max-width: 575px) {
+        .page-payment main .container .right-payment {
+          display: none; } }
+      @media (min-width: 576px) and (max-width: 767px) {
+        .page-payment main .container .right-payment {
+          width: auto;
+          margin-top: 20px; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .page-payment main .container .right-payment {
+          width: 100%;
+          height: 550px; } }
       .page-payment main .container .right-payment .payment-title {
         font-size: 14px;
         color: #242f52;
@@ -782,6 +830,9 @@ a {
 
 .form-check-input:checked[type=checkbox] {
   background-color: var(--color-main); }
+
+.margin-top-5 {
+  margin-top: 5px; }
 
 footer {
   height: 60px;

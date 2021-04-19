@@ -1,0 +1,43 @@
+$maxXSScreen: 576px;
+$maxSMScreen: 768px;
+$maxMDScreen: 992px;
+$maxLGScreen: 1200px;
+$maxXLScreen: 1400px;
+$maxXXLScreen: 1900px;
+@mixin XS_Screen {
+  @media (max-width: #{$maxXSScreen - 1px}) {
+    @content;
+  }
+}
+
+@mixin SM_Screen {
+  @media (min-width: #{$maxXSScreen}) and (max-width: #{$maxSMScreen - 1px}) {
+    @content;
+  }
+}
+
+@mixin MD_Screen {
+  @media (min-width: #{$maxSMScreen}) and (max-width: #{$maxMDScreen - 1px}) {
+    @content;
+  }
+}
+
+@mixin LG_Screen {
+  @media (min-width: #{$maxMDScreen}) and (max-width: #{$maxLGScreen - 1px}) {
+    @content;
+  }
+}
+
+@mixin XL_Screen {
+  @media (min-width: #{$maxLGScreen}) and (max-width: #{$maxXLScreen - 1px}) {
+    @content;
+  }
+}
+
+@mixin XXL_Screen {
+  @media (min-width: #{$maxXLScreen}) {
+    @content;
+  }
+}
+
+

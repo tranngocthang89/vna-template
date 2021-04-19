@@ -186,10 +186,26 @@ body {
 .page-payment {
   main {
     padding-top: 60px;
+    @include XS_Screen {
+      padding-top: 38px;
+    }
+    @include SM_Screen {
+      padding-top: 38px;
+    }
+    @include MD_Screen {
+      padding-top: 38px;
+    }
 
     .container {
       justify-content: center;
       font-family: "Open Sans", sans-serif;
+      display: flex;
+      @include XS_Screen {
+        display: block;
+      }
+      @include SM_Screen {
+        display: block;
+      }
 
       .box-payment {
         color: $paymentTextColor;
@@ -198,12 +214,34 @@ body {
         background-color: #f5f7fa;
         box-shadow: 0 4px 30px 0 rgba(36, 47, 82, 0.1);
         border: solid 2px #ffffff;
+        @include XS_Screen {
+          padding: 23px 12px 15px 12px;
+        }
+        @include SM_Screen {
+          padding: 23px 12px 15px 12px;
+        }
+        @include MD_Screen {
+          padding: 23px 12px 15px 12px;
+        }
       }
 
       .left-payment {
-        width: 500px;
-        margin-right: 50px;
         text-align: left;
+        margin-right: 50px;
+        width: 500px;
+        @include XS_Screen {
+          width: auto;
+          margin-right: 0;
+        }
+        @include SM_Screen {
+          width: auto;
+          margin-right: 0;
+        }
+        @include MD_Screen {
+          width: auto;
+          margin-right: 20px;
+        }
+
 
         .form-check-inline {
           label {
@@ -303,9 +341,20 @@ body {
       }
 
       .right-payment {
+        text-align: left;
         width: 360px;
         height: 526px;
-        text-align: left;
+        @include XS_Screen {
+          display: none;
+        }
+        @include SM_Screen {
+          width: auto;
+          margin-top: 20px;
+        }
+        @include MD_Screen {
+          width: 100%;
+          height: 550px;
+        }
 
         .payment-title {
           font-size: 14px;
@@ -379,7 +428,8 @@ body {
               display: flex;
               align-items: center;
               justify-content: center;
-              border-radius:8px;
+              border-radius: 8px;
+
               a {
                 font-size: 16px;
                 color: #fff;
