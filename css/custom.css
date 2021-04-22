@@ -9,6 +9,18 @@ body {
   font-family: 'HelveticaNeue', sans-serif;
   background-color: #eff4f7;
   font-size: 14px; }
+  body aside {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.2s;
+    padding-top: 60px;
+    text-align: center;
+    z-index: 10000; }
   body main {
     margin-top: 0;
     position: relative;
