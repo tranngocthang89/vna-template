@@ -114,3 +114,16 @@ $(".input-number").keydown(function (e) {
         e.preventDefault();
     }
 });
+function toggleSidebar() {
+    let sidebarWidth = document.getElementById("mySidenav").style;
+    if(sidebarWidth.width === "" || sidebarWidth.width === '0px'){
+        document.body.style.overflow = 'hidden'
+        sidebarWidth.width = '100%'
+    }else{
+        document.body.style.overflow = 'unset'
+        sidebarWidth.width = '0'
+    }
+    //.width = "100%";
+}
+
+

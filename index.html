@@ -14,13 +14,24 @@
 <body class="page-home">
 
 <header>
-    <div class="header-nav d-flex align-content-center fixed-top pt-1 w-100">
-        <div class="navbar navbar-white align-items-center align-content-center justify-content-between  w-100">
+    <div class="header-nav d-flex align-content-center fixed-top pt-lg-1 w-100">
+
+        <div class="navbar navbar-white align-items-center align-content-center justify-content-between w-100  d-none d-md-flex">
             <a href="#" class="navbar-brand d-flex align-items-center flex-column">
                 <img class="logo_lotus" src="/images/logo_lotus.png" alt="">
                 <span>Sải cánh vươn cao</span>
             </a>
-            <a class="btn-login" href="#">Đăng nhập/Đăng ký</a>
+            <a class="btn-login " href="#">Đăng nhập/Đăng ký</a>
+        </div>
+        <div class="navbar navbar-white bg-white align-items-center align-content-center justify-content-between w-100 d-lg-none">
+            <div  class="d-block d-md-none px-1" onclick="toggleSidebar()">
+                <img src="/images/menu.svg" alt="">
+            </div>
+            <a href="#" class="navbar-brand d-flex align-items-center flex-column">
+                <img class="logo_lotus" src="/images/logo_lotus.png" alt="">
+                <span>Sải cánh vươn cao</span>
+            </a>
+            <div></div>
         </div>
     </div>
     <div class="header-content">
@@ -58,7 +69,11 @@
         </div>
     </div>
 </header>
-
+<aside id="mySidenav">
+    <div class="collapse navbar-collapse bg-white" id="navbarSupportedContent">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid deserunt dolorem fugit hic impedit mollitia necessitatibus nihil, nisi officia pariatur placeat quas quia quos rerum, suscipit tenetur vel? Tempora, velit?
+    </div>
+</aside>
 <main class="">
     <div class="block-container container">
         <div class="row">
