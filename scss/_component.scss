@@ -7,12 +7,21 @@
     letter-spacing: normal;
     text-align: center;
     color: #032136;
+    @include XS_Screen {
+      text-align: left !important;
+      font-size: 32px;
+    }
+    @include SM_Screen {
+      text-align: left !important;
+      font-size: 32px;
+    }
   }
 
   .block-item {
     border-radius: 8px;
     width: 270px;
     margin-bottom: 30px;
+
 
     .block-item-content {
       padding: 13px 20px;
@@ -100,6 +109,9 @@
       color: #0a262e;
       padding-bottom: 17px;
       margin-right: 34px;
+      @include XS_Screen {
+        padding-bottom: 13px;
+      }
 
       &.active {
         border-bottom: 2px solid var(--color-organ);

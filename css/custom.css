@@ -10,7 +10,7 @@ body {
   background-color: #eff4f7;
   font-size: 14px; }
   body main {
-    margin-top: 0px;
+    margin-top: 0;
     position: relative;
     padding-bottom: 110px; }
     body main .features-swiper-container {
@@ -18,9 +18,21 @@ body {
       body main .features-swiper-container .feature-product-swiper {
         margin: 18px 66px;
         padding: 12px; }
+        @media (max-width: 575px) {
+          body main .features-swiper-container .feature-product-swiper {
+            margin: 0; } }
+        @media (min-width: 576px) and (max-width: 767px) {
+          body main .features-swiper-container .feature-product-swiper {
+            margin: 0; } }
         body main .features-swiper-container .feature-product-swiper .swiper-wrapper {
           margin: -10px;
           padding: 10px; }
+          @media (min-width: 768px) and (max-width: 991px) {
+            body main .features-swiper-container .feature-product-swiper .swiper-wrapper {
+              padding: 10px 0; } }
+          @media (min-width: 1200px) and (max-width: 1399px) {
+            body main .features-swiper-container .feature-product-swiper .swiper-wrapper {
+              padding: 10px 0; } }
           body main .features-swiper-container .feature-product-swiper .swiper-wrapper .block-item {
             box-shadow: 0 3px 10px 0 rgba(0, 84, 144, 0.16); }
       body main .features-swiper-container .swiper-button {
@@ -35,6 +47,12 @@ body {
         z-index: 9999;
         border-radius: 50%;
         top: 42%; }
+        @media (max-width: 575px) {
+          body main .features-swiper-container .swiper-button {
+            display: none; } }
+        @media (min-width: 576px) and (max-width: 767px) {
+          body main .features-swiper-container .swiper-button {
+            display: none; } }
         body main .features-swiper-container .swiper-button:focus {
           border: none;
           outline: 0; }
@@ -52,9 +70,40 @@ body {
       margin: 18px 36px 0;
       border-radius: 20px;
       background-color: var(--color-white); }
+      @media (max-width: 575px) {
+        body main .product-block {
+          margin: 0;
+          padding: 20px 8px; } }
+      @media (min-width: 576px) and (max-width: 767px) {
+        body main .product-block {
+          margin: 0;
+          padding: 20px 16px; } }
+      @media (max-width: 575px) {
+        body main .product-block .block-item {
+          width: calc(50% - 6px);
+          box-shadow: 0 3px 10px 0 rgba(0, 84, 144, 0.16); } }
+      @media (min-width: 576px) and (max-width: 767px) {
+        body main .product-block .block-item {
+          width: calc(50% - 15px);
+          box-shadow: 0 3px 10px 0 rgba(0, 84, 144, 0.16); } }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        body main .product-block .block-item {
+          width: 30%;
+          box-shadow: 0 3px 10px 0 rgba(0, 84, 144, 0.16); } }
+      @media (min-width: 1200px) and (max-width: 1399px) {
+        body main .product-block .block-item {
+          width: calc(25% - 16px);
+          box-shadow: 0 3px 10px 0 rgba(0, 84, 144, 0.16); } }
+      body main .product-block .swiper-menu-tab {
+        margin-left: 0; }
+        body main .product-block .swiper-menu-tab .swiper-slide {
+          width: auto; }
       body main .product-block .btn-organ {
         width: 570px;
         margin-bottom: 00px; }
+        @media (max-width: 575px) {
+          body main .product-block .btn-organ {
+            width: 100%; } }
     body main .main-footer {
       height: 110px;
       width: 100%;
@@ -65,6 +114,13 @@ body {
 
 .page-home main {
   padding-bottom: 0; }
+  .page-home main .block-container {
+    padding-left: 16px;
+    padding-right: 16px; }
+    @media (min-width: 576px) and (max-width: 767px) {
+      .page-home main .block-container {
+        width: auto;
+        max-width: none; } }
 
 .page-success main {
   padding-bottom: 228px;
@@ -406,6 +462,18 @@ header {
     header .header-content .list-services {
       margin-top: 40px;
       margin-left: 5px; }
+      @media (max-width: 575px) {
+        header .header-content .list-services {
+          margin-left: 0;
+          padding: 0 10px; } }
+      @media (min-width: 576px) and (max-width: 767px) {
+        header .header-content .list-services {
+          margin-left: 0;
+          padding: 0 16px; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        header .header-content .list-services {
+          margin-left: 0;
+          justify-content: center; } }
       header .header-content .list-services .service-item {
         flex-shrink: 0;
         border-radius: 16px;
@@ -419,6 +487,14 @@ header {
         cursor: pointer;
         margin-bottom: 40px;
         position: relative; }
+        @media (max-width: 575px) {
+          header .header-content .list-services .service-item {
+            width: calc(50% - 12px);
+            background-color: var(--color-white);
+            margin: 6px;
+            height: 136px;
+            padding: 16px;
+            overflow: hidden; } }
         header .header-content .list-services .service-item:hover, header .header-content .list-services .service-item.active {
           border: 2px solid #dba410; }
           header .header-content .list-services .service-item:hover span, header .header-content .list-services .service-item.active span {
@@ -432,6 +508,10 @@ header {
           border: solid 1px #aac9d1;
           background-color: #c3e0e8;
           z-index: 2; }
+          @media (max-width: 575px) {
+            header .header-content .list-services .service-item::before {
+              height: 40px;
+              width: 22.22px; } }
         header .header-content .list-services .service-item span {
           display: block;
           margin-top: 10px;
@@ -445,6 +525,9 @@ header {
           z-index: 3;
           position: relative;
           margin-left: 10px; }
+          @media (max-width: 575px) {
+            header .header-content .list-services .service-item img {
+              height: 40px; } }
   header .navbar {
     padding: 2px 0; }
     header .navbar .navbar-brand {
@@ -488,12 +571,56 @@ header {
 .page-home header {
   background: transparent url("/images/header-bg.png") top right no-repeat;
   background-size: contain; }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .page-home header {
+      background-size: 40% 80%; } }
+  @media (min-width: 1200px) and (max-width: 1399px) {
+    .page-home header {
+      background-size: 50% 80%; } }
   .page-home header .header-nav {
     background-color: transparent; }
   .page-home header .header-content {
     padding-bottom: 231px; }
+    @media (max-width: 575px) {
+      .page-home header .header-content {
+        padding-bottom: 30px; } }
+    @media (min-width: 576px) and (max-width: 767px) {
+      .page-home header .header-content {
+        padding-bottom: 30px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .page-home header .header-content {
+        padding-bottom: 30px; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .page-home header .header-content {
+        padding-bottom: 30px; } }
+    @media (min-width: 1200px) and (max-width: 1399px) {
+      .page-home header .header-content {
+        padding-bottom: 5px; } }
     .page-home header .header-content .header-title {
       margin-top: 145px; }
+      @media (max-width: 575px) {
+        .page-home header .header-content .header-title {
+          margin-top: 400px;
+          font-size: 32px;
+          padding: 0 16px; }
+          .page-home header .header-content .header-title br {
+            display: none; } }
+      @media (min-width: 576px) and (max-width: 767px) {
+        .page-home header .header-content .header-title {
+          margin-top: 700px;
+          font-size: 32px;
+          padding: 0 16px; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .page-home header .header-content .header-title {
+          margin-top: 700px;
+          font-size: 36px;
+          padding: 0 16px;
+          text-align: center; } }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .page-home header .header-content .header-title {
+          padding: 0 16px;
+          font-size: 32px;
+          margin-top: 100px; } }
 
 .page-detail header .header-nav .navbar,
 .page-category header .header-nav .navbar {
@@ -539,6 +666,14 @@ header {
   letter-spacing: normal;
   text-align: center;
   color: #032136; }
+  @media (max-width: 575px) {
+    .block-container .block-header {
+      text-align: left !important;
+      font-size: 32px; } }
+  @media (min-width: 576px) and (max-width: 767px) {
+    .block-container .block-header {
+      text-align: left !important;
+      font-size: 32px; } }
 
 .block-container .block-item {
   border-radius: 8px;
@@ -604,6 +739,9 @@ header {
       color: #0a262e;
       padding-bottom: 17px;
       margin-right: 34px; }
+      @media (max-width: 575px) {
+        .product-block .nav-tabs .nav-link {
+          padding-bottom: 13px; } }
       .product-block .nav-tabs .nav-link.active {
         border-bottom: 2px solid var(--color-organ);
         color: var(--color-main); }

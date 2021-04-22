@@ -4,7 +4,7 @@ body {
   font-size: $mainFontSize;
 
   main {
-    margin-top: 0px;
+    margin-top: 0;
     position: relative;
     padding-bottom: 110px;
 
@@ -14,10 +14,22 @@ body {
       .feature-product-swiper {
         margin: 18px 66px;
         padding: 12px;
+        @include XS_Screen {
+          margin: 0;
+        }
+        @include SM_Screen {
+          margin: 0;
+        }
 
         .swiper-wrapper {
           margin: -10px;
           padding: 10px;
+          @include MD_Screen {
+            padding: 10px 0;
+          }
+          @include XL_Screen {
+            padding: 10px 0;
+          }
 
           .block-item {
             box-shadow: 0 3px 10px 0 rgba(0, 84, 144, 0.16);
@@ -37,6 +49,12 @@ body {
         z-index: 9999;
         border-radius: 50%;
         top: 42%;
+        @include XS_Screen {
+          display: none;
+        }
+        @include SM_Screen {
+          display: none;
+        }
 
         &:focus {
           border: none;
@@ -65,10 +83,49 @@ body {
       margin: 18px 36px 0;
       border-radius: 20px;
       background-color: var(--color-white);
+      @include XS_Screen {
+        margin: 0;
+        padding: 20px 8px;
+      }
+      @include SM_Screen {
+        margin: 0;
+        padding: 20px 16px;
+      }
+
+
+      .block-item {
+        @include XS_Screen {
+          width: calc(50% - 6px);
+          box-shadow: 0 3px 10px 0 rgba(0, 84, 144, 0.16);
+        }
+        @include SM_Screen {
+          width: calc(50% - 15px);
+          box-shadow: 0 3px 10px 0 rgba(0, 84, 144, 0.16);
+        }
+        @include LG_Screen {
+          width: 30%;
+          box-shadow: 0 3px 10px 0 rgba(0, 84, 144, 0.16);
+        }
+        @include XL_Screen {
+          width: calc(25% - 16px);
+          box-shadow: 0 3px 10px 0 rgba(0, 84, 144, 0.16);
+        }
+      }
+
+      .swiper-menu-tab {
+        margin-left: 0;
+
+        .swiper-slide {
+          width: auto;
+        }
+      }
 
       .btn-organ {
         width: 570px;
         margin-bottom: 00px;
+        @include XS_Screen {
+          width: 100%;
+        }
       }
     }
 
@@ -86,6 +143,15 @@ body {
 .page-home {
   main {
     padding-bottom: 0;
+
+    .block-container {
+      padding-left: 16px;
+      padding-right: 16px;
+      @include SM_Screen {
+        width: auto;
+        max-width: none;
+      }
+    }
   }
 }
 
@@ -552,10 +618,13 @@ body {
       padding-top: 0;
       padding-bottom: 0;
       border-radius: 32px;
-      .category-item{
+
+      .category-item {
         margin-bottom: 8px;
-        &:last-child{
-         }
+
+        &:last-child {
+        }
+
         .category-title {
 
           margin-bottom: 18px;

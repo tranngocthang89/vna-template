@@ -10,6 +10,18 @@ var swiper = new Swiper('.feature-product-swiper', {
         prevEl: '.button-swiper-home-prev',
     },
 });
+var swiperMenuTab = new Swiper('.swiper-menu-tab', {
+    slidesPerView: 'auto',
+    spaceBetween: 0,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.button-swiper-home-next',
+        prevEl: '.button-swiper-home-prev',
+    },
+});
 
 var galleryThumbs = new Swiper('.gallery-thumbs', {
     spaceBetween: 16,
