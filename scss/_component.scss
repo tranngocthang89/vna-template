@@ -382,15 +382,58 @@ a {
   height: 60px;
   border-bottom: 1px solid #edeeef;
   margin-bottom: 30px;
+  display: flex;
+  @include XS_Screen {
+    display: none;
+  }
+  @include SM_Screen {
+    display: none;
+  }
+  @include MD_Screen {
+    display: none;
+  }
 
   select {
     height: 100%;
-    border: none;
     -webkit-appearance: none;
+    border: none;
     -moz-appearance: none;
     color: #728388;
     background: transparent url("/images/icon-polygon-down.svg") right 10px center no-repeat;
     padding-right: 24px;
+
+    &:focus {
+      box-shadow: none;
+      border: 0;
+      outline: 0;
+    }
+  }
+}
+
+.block-filter-mobile {
+  margin-bottom: 27px;
+  @include LG_Screen{
+    display: none;
+  }
+  @include XL_Screen{
+    display: none;
+  }
+  @include XXL_Screen{
+    display: none;
+  }
+  .form-control{
+    border-radius:8px;
+    border: solid 1px #e7eaeb;
+    background-color: #fafbff;
+  }
+  select {
+    height: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: #001c26;
+    background: transparent url("/images/icon-polygon-down.svg") right 10px center no-repeat;
+    padding-right: 24px;
+    margin-bottom:8px;
 
     &:focus {
       box-shadow: none;

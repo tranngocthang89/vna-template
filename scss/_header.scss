@@ -262,15 +262,22 @@ header {
       width: 100%;
       margin-top: 50px;
       overflow: hidden;
+      @include XS_Screen {
+        height:400px;
+      }
 
       .header-title {
         font-size: 40px;
         margin-top: 115px;
-        font-family: OpenSans, serif;
+        font-family: "Open Sans",serif;
         position: absolute;
         width: 100%;
         text-align: center;
         z-index: 4;
+        @include XS_Screen {
+          font-size:24px;
+          margin-top:92px;
+        }
       }
 
       .header-banner {
