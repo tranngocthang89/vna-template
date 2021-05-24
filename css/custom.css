@@ -1451,14 +1451,18 @@ footer .content-footer {
     padding: 0 60px; }
   .header-content {
     padding: 0 60px;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+    .header-content .header-banner {
+      margin: 0 -60px; } }
 
 @media (min-width: 1400px) {
   .header-nav {
     padding: 0 60px; }
   .header-content {
     padding: 0 60px;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+    .header-content .header-banner {
+      margin: 0 -60px; } }
 
 @media (min-width: 1700px) {
   .header-nav {
@@ -1467,5 +1471,7 @@ footer .content-footer {
     padding: 0;
     width: 1520px;
     margin: 0 auto; }
+    .header-content .header-banner {
+      margin: 0 -60px; }
   .container {
     width: 1520px; } }
